@@ -14,6 +14,7 @@ npx create-turbo@latest
 
 This Turborepo includes the following packages/apps:
 
+<!-- !$Gr.r5&H8nNHZF -->
 ### Apps and Packages
 
 - `docs`: a [Next.js](https://nextjs.org/) app
