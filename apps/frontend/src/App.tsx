@@ -1,4 +1,5 @@
 import useUser from "../hooks/useUser"
+import { supabase } from "../lib/supabase";
 
 const App = () => {
 
@@ -11,6 +12,16 @@ const App = () => {
       </button>
 
       <pre>{JSON.stringify(user, null, 2)}</pre>
+
+      {
+        user && (
+          <button onClick={() => {
+            supabase.auth.signOut();
+          }}>
+            Sign out
+          </button>
+        )
+      }
     </div>
   );
 };
